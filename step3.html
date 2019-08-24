@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+      <form action="index.html" class="login-form">
+          <a href="step2.html" class="previous">&laquo; Prev</a>
+        <h1><center>Parking space</center></h1>
+          <div class="bottom-text">
+          Type of parking space your having? <a href="">Learn More...</a>
+        </div><br>
+
+        <input type="submit" class="logbtn" value="Garage"><br>
+        <input type="submit" class="logbtn" value="Driveway"><br>
+        <input type="submit" class="logbtn" value="Parking Lots"><br>
+
+        
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>

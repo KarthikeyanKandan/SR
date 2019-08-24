@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+      <form action="index.html" class="login1-form">
+          <a href="step2.html" class="previous">&laquo; Prev</a>
+        <h1><center>Features?</center></h1>
+          <div class="bottom-text1">
+          Features in your parking space? <br></div> 
+          <div class="spacing">
+            <img id="myImage" onclick="changeImage()" src="pics/car.png" width="30%" height="30%"  >
+            <img id="myImage1" onclick="changeImage1()" src="pics/bulb.png" width="30%" height="30%">
+            <img id="myImage2" onclick="changeImage2()" src="pics/plug.png" width="30%" height="30%"  >
+          </div>
+          <div class="spacing">
+            <img id="myImage3" onclick="changeImage3()" src="pics/camb.png" width="30%" height="30%"  >
+            <img id="myImage4" onclick="changeImage4()" src="pics/lock.png" width="30%" height="30%">
+            <img id="myImage5" onclick="changeImage5()" src="pics/avatar.png" width="30%" height="30%"  >
+          </div>
+       <div class="bottom-text1">
+          What type of car can be parked in your space? <br></div> 
+          <div class="spacing">
+            <img id="myImage6" onclick="changeImage6()" src="cam.jpg" width="30%" height="30%"  >
+            <img id="myImage7" onclick="changeImage7()" src="cam.jpg" width="30%" height="30%">
+            <img id="myImage8" onclick="changeImage8()" src="cam.jpg" width="30%" height="30%"  >
+          </div>
+          <input type="submit" class="signbtn" id="submit" value="Next">
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("pics/car1.png")) {
+    image.src = "pics/car.png";
+    v=0
+  } else {
+    image.src = "pics/car1.png";
+  }
+}
+          function changeImage1() {
+  var image = document.getElementById('myImage1');
+  if (image.src.match("pics/bulb1.png")) {
+    image.src = "pics/bulb.png";
+    v=0
+  } else {
+    image.src = "pics/bulb1.png";
+  }
+}
+           function changeImage2() {
+  var image = document.getElementById('myImage2');
+  if (image.src.match("pics/plug.png")) {
+    image.src = "cam.jpg";
+    v=0
+  } else {
+    image.src = "pics/plug.png";
+  }
+}
+                  function changeImage3() {
+  var image = document.getElementById('myImage3');
+  if (image.src.match("pics/cam.png")) {
+    image.src = "pics/camb.png";
+    v=0
+  } else {
+    image.src = "pics/cam.png";
+  }
+}
+                  function changeImage4() {
+  var image = document.getElementById('myImage4');
+  if (image.src.match("pics/lock1.png")) {
+    image.src = "pics/lock.png";
+    v=0
+  } else {
+    image.src = "pics/lock1.png";
+  }
+}
+                  function changeImage5() {
+  var image = document.getElementById('myImage5');
+  if (image.src.match("pics/avatar.png")) {
+    image.src = "cam.jpg";
+    v=0
+  } else {
+    image.src = "pics/avatar.png";
+  }
+}
+                function changeImage6() {
+  var image = document.getElementById('myImage6');
+  if (image.src.match("pics/cctv.png")) {
+    image.src = "cam.jpg";
+    v=0
+  } else {
+    image.src = "pics/cctv.png";
+  }
+}
+                  function changeImage7() {
+  var image = document.getElementById('myImage7');
+  if (image.src.match("pics/locked.png")) {
+    image.src = "cam.jpg";
+    v=0
+  } else {
+    image.src = "pics/locked.png";
+  }
+}
+                  function changeImage8() {
+  var image = document.getElementById('myImage8');
+  if (image.src.match("pics/avatar.png")) {
+    image.src = "cam.jpg";
+    v=0
+  } else {
+    image.src = "pics/avatar.png";
+  }
+}
+       
+       
+      </script>
+
+
+  </body>
+</html>

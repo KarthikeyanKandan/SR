@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+      <form action="step3.html" class="login-form">
+          <a href="pic.html" class="previous">&laquo; Prev</a>
+        <h1><center>Building Type</center></h1>
+          <div class="bottom-text">
+          What type of building is yours? <a href="">Learn More...</a>
+        </div><br>
+
+     <input type="submit" class="logbtn" value="Residential"><br>
+        <input type="submit" class="logbtn" value="Business"><br>
+        <input type="submit" class="logbtn" value="others"><br>
+
+        
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>

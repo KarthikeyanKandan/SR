@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+<form action="index.html" class="login2-form">
+    <h2><center>Schedule</center></h2>
+    <div class="bottom-text">
+        What days can drivers park at your space? </div><br>
+     <div class="bottom1-text">
+        <pre>           Mon       Tue       Wed       Thur        Fri         Sat        Sun</pre>
+        </div>
+    <div class="spacing">
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+    <div class="bottom-text">
+        schedule open timing based on your convenience? </div><br>
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+      
+
+      </script>
+
+
+  </body>
+</html>

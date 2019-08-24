@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+<form action="index.html" class="login2-form">
+    <h2><center>Schedule</center></h2>
+    <div class="bottom-text">
+        What days can drivers park at your space? </div><br>
+     <div class="bottom1-text">
+        <pre>           Mon       Tue       Wed       Thur        Fri         Sat        Sun</pre>
+        </div>
+    <div class="spacing">
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+    <div><div class="bottom-text">
+        schedule open timing based on your convenience? </div><br>
+    <center><div class="bottom1-text">
+        Start Time: 
+      <div class="dropdown">
+  <button id="myBtn" class="dropbtn">12AM</button>
+  <div id="myDropdown" class="dropdown-content">
+    <ol>
+      <li>
+        12 AM
+        1 AM
+        2 AM  
+        </li></ol>
+    
+  </div>
+        </div></div></center>
+        <center><div class="bottom1-text">
+        End Time : 
+      <div class="dropdown">
+  <button id="myBtn1" class="dropbtn">12AM</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+        </div></div></center></div>
+      </form>
+
+      <script >
+      // Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+           // Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn1").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+      </script>
+
+
+  </body>
+</html>
